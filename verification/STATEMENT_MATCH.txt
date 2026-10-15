@@ -1,0 +1,36 @@
+STATEMENT-MATCH AUDIT (AI REVIEW)
+
+The compared statements retain the original complete candidate's meanings:
+1. E_counts_all_dilations equates explicit E.eval m with Nat.card of the actual
+   Coord/Valid subtype for every natural m, including zero.
+2. E_has_nonreal_root yields a complex zero of E with nonzero imaginary part.
+3. complete_counterexample gives a rooted Forest of size 243, its genuine
+   all-dilation counting polynomial, and a nonreal root without hypotheses.
+4. ehrhart_unique quantifies over every forest and any two counting polynomials.
+5. not_all_arbor_ehrhart_roots_real negates the universal real-root assertion
+   for the allowed singleton-labeled rooted arbors.
+
+The independent Challenge duplicates the full ordinary definitions of Forest,
+size, Coord, height, Valid, copies, leaf, star, witness, f, E and IsEhrhart.
+No source of the proof-side import closure imports Challenge. Comparator's
+independent check must still pass; this text is not a substitute for it.
+
+Port changes from the preserved Lean 4.27.0 development:
+- module/public import/exposed public declarations for the required module system;
+- Lift and leaf made reducible abbreviations and population marked reducible,
+  preserving their complete values and all coordinate/count semantics;
+- configFintype included explicitly in simplification for the newer elaborator;
+- deprecated push_neg spelling changed to push Not.
+No mathematical hypothesis, quantifier, conclusion, bound, or coefficient changed.
+
+External correspondence is to the descendant-sum inequalities in Chapoton,
+arXiv:2503.04247v2. Product coordinates name distinct singleton vertices;
+root introduces a vertex and pair is disjoint union with no new vertex.
+Nat records nonnegative integral coordinates. The finite lattice equivalence
+proves finiteness, injectivity and surjectivity, preventing an infinite-type
+Nat.card fallback from trivializing the lattice count. The explicit witness
+is a legitimate subclass member, which suffices to refute the full assertion.
+The separate h*-root claim and minimality are outside scope.
+
+This is an AI assessment of external prose-to-definition fidelity. No human
+has checked and understood the work, as reported by the contributor.
