@@ -1,0 +1,325 @@
+{
+  "status": "PASS",
+  "started_at_utc": "20261015T025326604815Z",
+  "records": [
+    {
+      "module": "Moments",
+      "command": [
+        "/Users/yuran/.elan/bin/lean",
+        "+leanprover/lean4:v4.35.0-rc3",
+        "-M4096",
+        "-j1",
+        "-DmaxRecDepth=8192",
+        "-DmaxHeartbeats=2000000",
+        "-o",
+        "/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/Moments.olean",
+        "/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/Moments.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.393594541121274,
+      "accepted": true,
+      "source_sha256": "3eedf57cdf8376a806cfa6e086f8f66d6e84f4b173664f57be005120815533bd",
+      "olean_sha256": "224c21073bb7671fdd22f277db9a9d79ac073026afbb55e4862c5cfb08abc1c4",
+      "log_sha256": "9eae5dd2175c94da9c45e1425c4a9aa62130beb6eddebe69e4b51558ad8dcbfc",
+      "axiom_audits": []
+    },
+    {
+      "module": "Arbor",
+      "command": [
+        "/Users/yuran/.elan/bin/lean",
+        "+leanprover/lean4:v4.35.0-rc3",
+        "-M4096",
+        "-j1",
+        "-DmaxRecDepth=8192",
+        "-DmaxHeartbeats=2000000",
+        "-o",
+        "/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/Arbor.olean",
+        "/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/Arbor.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.6060740831308067,
+      "accepted": true,
+      "source_sha256": "da6af8953b8664dd3740044ecfb1155ad68e77ea3b30159f93dab0febe5332c6",
+      "olean_sha256": "70b370a3bd9f918028e0189c71c908c248d217d8d06c4ee3e8976d588d8028ea",
+      "log_sha256": "bcf687c5f502147d11b22625766a609ec040418b6c530975cab062b5b7d227d2",
+      "axiom_audits": [
+        [
+          "ArborCounterexample.Forest.lattice_count_eq_moment",
+          "propext, Classical.choice, Quot.sound"
+        ]
+      ]
+    },
+    {
+      "module": "Count",
+      "command": [
+        "/Users/yuran/.elan/bin/lean",
+        "+leanprover/lean4:v4.35.0-rc3",
+        "-M4096",
+        "-j1",
+        "-DmaxRecDepth=8192",
+        "-DmaxHeartbeats=2000000",
+        "-o",
+        "/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/Count.olean",
+        "/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/Count.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.3005693326704204,
+      "accepted": true,
+      "source_sha256": "9114094bcbd826779113949d938e47c07625025f6e04ce5fc058523a50d5d934",
+      "olean_sha256": "e8194bc62bcb8a13494f01071b25415a9aa353c81c318c2a17c845613729a65f",
+      "log_sha256": "d0e448b8a9703941834a18739895b074139173d561a7e10e59c8ea671570823d",
+      "axiom_audits": [
+        [
+          "ArborCounterexample.Forest.witness_count",
+          "propext, Classical.choice, Quot.sound"
+        ]
+      ]
+    },
+    {
+      "module": "ComplexFTA",
+      "command": [
+        "/Users/yuran/.elan/bin/lean",
+        "+leanprover/lean4:v4.35.0-rc3",
+        "-M4096",
+        "-j1",
+        "-DmaxRecDepth=8192",
+        "-DmaxHeartbeats=2000000",
+        "-o",
+        "/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/ComplexFTA.olean",
+        "/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/ComplexFTA.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.395673915743828,
+      "accepted": true,
+      "source_sha256": "b5cbce223745325e74835431d8139bc84bb95cc4d8d3c3510cfa7809f06a27c5",
+      "olean_sha256": "05a6c2807f583a03af140e25a9a57dfe30834256fbefc5c417feabb8aa9692b5",
+      "log_sha256": "0a1ce60365f7e05cbe1e4c6038d96a8c5ea8deddb1e101a6da2d90c755b21527",
+      "axiom_audits": [
+        [
+          "ArborCounterexample.complexIsAlgClosed",
+          "propext, Classical.choice, Quot.sound"
+        ]
+      ]
+    },
+    {
+      "module": "RootObstruction",
+      "command": [
+        "/Users/yuran/.elan/bin/lean",
+        "+leanprover/lean4:v4.35.0-rc3",
+        "-M4096",
+        "-j1",
+        "-DmaxRecDepth=8192",
+        "-DmaxHeartbeats=2000000",
+        "-o",
+        "/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/RootObstruction.olean",
+        "/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/RootObstruction.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.160217875149101,
+      "accepted": true,
+      "source_sha256": "bd78ecd0071c14e763b583d03da1b0afa2da44fc219ab7ff417a8ac8f0d7c02e",
+      "olean_sha256": "b5dd6c6f1799ae8e528ef6945a4ab09c21a6245055bcfa9714e8b9058eb3b771",
+      "log_sha256": "87ed57d2f6f12468246dc08d8acd36ab4f1fd8eb43c8a2ce354998afb8d8d47c",
+      "axiom_audits": [
+        [
+          "ArborCounterexample.f_has_nonreal_root",
+          "propext, Classical.choice, Quot.sound"
+        ]
+      ]
+    },
+    {
+      "module": "Main",
+      "command": [
+        "/Users/yuran/.elan/bin/lean",
+        "+leanprover/lean4:v4.35.0-rc3",
+        "-M4096",
+        "-j1",
+        "-DmaxRecDepth=8192",
+        "-DmaxHeartbeats=2000000",
+        "-o",
+        "/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/Main.olean",
+        "/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/Main.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.158687791787088,
+      "accepted": true,
+      "source_sha256": "b71e456c48d075050799995a555e3bc209dcb7ce852d18a591230a7ed5dbc107",
+      "olean_sha256": "314d894a120ceb8d7cf00ffbd988d3ae4516d9489f0c5be9f7f9f53bc705007a",
+      "log_sha256": "2ca15098fd6504a564dec619f5bf340a2795c46acdbd0f01d777f95f5e6a8b08",
+      "axiom_audits": [
+        [
+          "ArborCounterexample.E_counts_all_dilations",
+          "propext, Classical.choice, Quot.sound"
+        ],
+        [
+          "ArborCounterexample.ehrhart_unique",
+          "propext, Classical.choice, Quot.sound"
+        ],
+        [
+          "ArborCounterexample.complete_counterexample",
+          "propext, Classical.choice, Quot.sound"
+        ]
+      ]
+    },
+    {
+      "module": "Audit",
+      "command": [
+        "/Users/yuran/.elan/bin/lean",
+        "+leanprover/lean4:v4.35.0-rc3",
+        "-M4096",
+        "-j1",
+        "-DmaxRecDepth=8192",
+        "-DmaxHeartbeats=2000000",
+        "-o",
+        "/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/Audit.olean",
+        "/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/Audit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.040207500103861,
+      "accepted": true,
+      "source_sha256": "58c896a76df8c601dee77e2af91631a08f0ce57854a86aa5389c989ce442aadf",
+      "olean_sha256": "9b8409bb55044900b61c0b19a34f045414d7d74f3c0c789cbed878b9a3176a07",
+      "log_sha256": "4e3668b52071c31eb5f206c406ac09903559b62ed4445ed761c56b5c19132f17",
+      "axiom_audits": [
+        [
+          "ArborCounterexample.E_at_zero",
+          "propext, Classical.choice, Quot.sound"
+        ],
+        [
+          "ArborCounterexample.E_ne_zero",
+          "propext, Classical.choice, Quot.sound"
+        ],
+        [
+          "ArborCounterexample.E_counts_all_dilations",
+          "propext, Classical.choice, Quot.sound"
+        ],
+        [
+          "ArborCounterexample.complete_counterexample",
+          "propext, Classical.choice, Quot.sound"
+        ],
+        [
+          "ArborCounterexample.not_all_arbor_ehrhart_roots_real",
+          "propext, Classical.choice, Quot.sound"
+        ]
+      ]
+    },
+    {
+      "module": "Solution",
+      "command": [
+        "/Users/yuran/.elan/bin/lean",
+        "+leanprover/lean4:v4.35.0-rc3",
+        "-M4096",
+        "-j1",
+        "-DmaxRecDepth=8192",
+        "-DmaxHeartbeats=2000000",
+        "-o",
+        "/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/Solution.olean",
+        "/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/Solution.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.1733430828899145,
+      "accepted": true,
+      "source_sha256": "24ca2f1bfc4ce356761d0eb3402cf18083184cb6789cf9b5c02597d785bbd256",
+      "olean_sha256": "32b65bfe41229e9e68f77e11c93e9efd9b9bc99ab691a111cc226e3a5e4b68a3",
+      "log_sha256": "b8934f32ab34b8aa0e3c32053205e02d7d7e897dee626d5302e1112fa1ca6c73",
+      "axiom_audits": [
+        [
+          "ArborCounterexample.E_counts_all_dilations",
+          "propext, Classical.choice, Quot.sound"
+        ],
+        [
+          "ArborCounterexample.E_has_nonreal_root",
+          "propext, Classical.choice, Quot.sound"
+        ],
+        [
+          "ArborCounterexample.complete_counterexample",
+          "propext, Classical.choice, Quot.sound"
+        ],
+        [
+          "ArborCounterexample.ehrhart_unique",
+          "propext, Classical.choice, Quot.sound"
+        ],
+        [
+          "ArborCounterexample.not_all_arbor_ehrhart_roots_real",
+          "propext, Classical.choice, Quot.sound"
+        ]
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "mathlib",
+      "expected_rev": "728a93eeff833da3173895bb0575752fdc24edb0",
+      "actual_rev": "728a93eeff833da3173895bb0575752fdc24edb0",
+      "tracked_changes": ""
+    },
+    {
+      "name": "plausible",
+      "expected_rev": "b7fb2b866d25bd937a2069931f9733197521cb27",
+      "actual_rev": "b7fb2b866d25bd937a2069931f9733197521cb27",
+      "tracked_changes": ""
+    },
+    {
+      "name": "LeanSearchClient",
+      "expected_rev": "c35806f43135ab3f254429d0c00bd13fc0123f77",
+      "actual_rev": "c35806f43135ab3f254429d0c00bd13fc0123f77",
+      "tracked_changes": ""
+    },
+    {
+      "name": "importGraph",
+      "expected_rev": "103cd9a46972ee39d9defb2f54ae49823b1228eb",
+      "actual_rev": "103cd9a46972ee39d9defb2f54ae49823b1228eb",
+      "tracked_changes": ""
+    },
+    {
+      "name": "proofwidgets",
+      "expected_rev": "87dfe779d5dfd03142ee4fe158911b8eb553ec98",
+      "actual_rev": "87dfe779d5dfd03142ee4fe158911b8eb553ec98",
+      "tracked_changes": ""
+    },
+    {
+      "name": "aesop",
+      "expected_rev": "a92ed98e694702934d40d12f24a1a449144db43e",
+      "actual_rev": "a92ed98e694702934d40d12f24a1a449144db43e",
+      "tracked_changes": ""
+    },
+    {
+      "name": "Qq",
+      "expected_rev": "37b0ba0b26109cf9f9c541f0f9557e50cfa1a3b9",
+      "actual_rev": "37b0ba0b26109cf9f9c541f0f9557e50cfa1a3b9",
+      "tracked_changes": ""
+    },
+    {
+      "name": "batteries",
+      "expected_rev": "950339ce0fd0cc0673a22d87036075737586aed2",
+      "actual_rev": "950339ce0fd0cc0673a22d87036075737586aed2",
+      "tracked_changes": ""
+    },
+    {
+      "name": "Cli",
+      "expected_rev": "843844fa601dd56767b1eb22b7ada5b64d5e567a",
+      "actual_rev": "843844fa601dd56767b1eb22b7ada5b64d5e567a",
+      "tracked_changes": ""
+    }
+  ],
+  "source_hashes": {
+    "Arbor.lean": "da6af8953b8664dd3740044ecfb1155ad68e77ea3b30159f93dab0febe5332c6",
+    "Audit.lean": "58c896a76df8c601dee77e2af91631a08f0ce57854a86aa5389c989ce442aadf",
+    "Challenge.lean": "429af65cc25102e123baeb9983ce0111679c333f93b61ffc36010bf2f6a64643",
+    "ComplexFTA.lean": "b5cbce223745325e74835431d8139bc84bb95cc4d8d3c3510cfa7809f06a27c5",
+    "Count.lean": "9114094bcbd826779113949d938e47c07625025f6e04ce5fc058523a50d5d934",
+    "Main.lean": "b71e456c48d075050799995a555e3bc209dcb7ce852d18a591230a7ed5dbc107",
+    "Moments.lean": "3eedf57cdf8376a806cfa6e086f8f66d6e84f4b173664f57be005120815533bd",
+    "RootObstruction.lean": "bd78ecd0071c14e763b583d03da1b0afa2da44fc219ab7ff417a8ac8f0d7c02e",
+    "Solution.lean": "24ca2f1bfc4ce356761d0eb3402cf18083184cb6789cf9b5c02597d785bbd256",
+    "comparator.json": "1d331de48d36999e3e6b408b618578cb8f296528cb377e9609cf54d2b1e54e6e",
+    "lake-manifest.json": "d45e223a26014d092ce7bc7a3a76794c25376b84385d781725aef1c154741276",
+    "lakefile.toml": "66aa88a5f61acbe015cbaadfaafedc54c8c38441c19342c7c0b4e85145c0dc9c",
+    "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47"
+  },
+  "trust_boundary": "All own modules freshly compiled; pinned dependency oleans reused. This run does not rebuild mathlib or the Lean compiler.",
+  "verification_script_sha256": "c884776ac2904e316431df8ee793f5e1184910e0103b153074e8b42b7cd5498f",
+  "package_root": "/Users/yuran/workplace/STOC/arbor-ehrhart-lean/.lake/packages",
+  "lean_version": "Lean (version 4.35.0-rc3, arm64-apple-darwin24.6.0, commit 470d5ce1400764999581fd26d5d72b00d990b0f4, Release)",
+  "finished_at_utc": "2026-10-15T02:53:51.358547+00:00"
+}
