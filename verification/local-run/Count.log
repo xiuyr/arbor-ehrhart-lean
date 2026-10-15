@@ -1,0 +1,56 @@
+/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/Count.lean:27:23: warning: This simp argument is unused:
+  configFintype
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [moments, moment, deficit, population]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/Count.lean:29:23: warning: This simp argument is unused:
+  configFintype
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [moments, moment, deficit, population]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/Count.lean:87:33: warning: This simp argument is unused:
+  configFintype
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [leaf, moments, moment, deficit, population, Lift, liftDef, Fintype.sum_sigma, Nat.add_zero,
+    Fintype.sum_unique, pow_zero, pow_one, Finset.sum_const, Finset.card_univ, Fintype.card_fin, Fintype.card_sigma,
+    Fintype.card_unit, nsmul_eq_mul, mul_one, Nat.cast_add, Nat.cast_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/Count.lean:88:37: warning: This simp argument is unused:
+  Fintype.sum_unique
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [leaf, moments, moment, configFintype, deficit, population, Lift, liftDef, Fintype.sum_sigma,
+    Nat.add_zero, pow_zero, pow_one, Finset.sum_const, Finset.card_univ, Fintype.card_fin, Fintype.card_sigma,
+    Fintype.card_unit, nsmul_eq_mul, mul_one, Nat.cast_add, Nat.cast_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/Count.lean:91:27: warning: This simp argument is unused:
+  Nat.cast_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [leaf, moments, moment, configFintype, deficit, population, Lift, liftDef, Fintype.sum_sigma,
+    Nat.add_zero, Fintype.sum_unique, pow_zero, pow_one, Finset.sum_const, Finset.card_univ, Fintype.card_fin,
+    Fintype.card_sigma, Fintype.card_unit, nsmul_eq_mul, mul_one, Nat.cast_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/Count.lean:94:25: warning: This simp argument is unused:
+  Fintype.card_unit
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mu1, mu2, mu3, Nat.cast_one, one_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/Count.lean:94:43: warning: This simp argument is unused:
+  Nat.cast_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mu1, mu2, mu3, Fintype.card_unit, one_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ArborCounterexample.Forest.witness_count' depends on axioms: [propext, Classical.choice, Quot.sound]

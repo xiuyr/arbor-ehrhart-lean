@@ -1,0 +1,5 @@
+'ArborCounterexample.E_counts_all_dilations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArborCounterexample.E_has_nonreal_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArborCounterexample.complete_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArborCounterexample.ehrhart_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArborCounterexample.not_all_arbor_ehrhart_roots_real' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,9 @@
+ArborCounterexample.IsEhrhart (t : Forest) (p : ℝ[X]) : Prop
+ArborCounterexample.complete_counterexample :
+  ∃ t p z,
+    (∃ children, t = children.root) ∧ t.size = 243 ∧ IsEhrhart t p ∧ eval z (map (algebraMap ℝ ℂ) p) = 0 ∧ z.im ≠ 0
+'ArborCounterexample.E_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArborCounterexample.E_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArborCounterexample.E_counts_all_dilations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArborCounterexample.complete_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArborCounterexample.not_all_arbor_ehrhart_roots_real' depends on axioms: [propext, Classical.choice, Quot.sound]

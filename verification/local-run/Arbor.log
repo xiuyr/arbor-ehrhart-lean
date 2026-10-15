@@ -1,0 +1,15 @@
+/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/Arbor.lean:77:26: warning: This simp argument is unused:
+  encode
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Valid, height, deficit, population, size]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/Users/yuran/workplace/STOC/arbor-ehrhart-lean/verification/clean-20261015T025326604815Z/Arbor.lean:77:51: warning: This simp argument is unused:
+  population
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Valid, encode, height, deficit, size]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'ArborCounterexample.Forest.lattice_count_eq_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
