@@ -1,0 +1,154 @@
+{
+  "version": "v0.4",
+  "project": {
+    "name": "An Arbor Polytope with Nonreal Ehrhart Roots",
+    "description": "A singleton-labeled rooted arbor with 243 vertices has an Ehrhart polynomial with a nonreal root. The formalization proves the lattice-count identity at every natural dilation, identifies the polynomial uniquely, establishes a nonreal complex root, and refutes universal real-rootedness for this allowed class. The proof uses a finite-deficit bijection, exact moment identities, and a negative Laguerre expression for an explicit quintic. It does not address the distinct h*-root assertion or minimal counterexample size.",
+    "authors": [
+      "Yuran Xiu"
+    ],
+    "license": "Apache-2.0",
+    "responsible_maintainers": [
+      "Yuran Xiu"
+    ]
+  },
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "52B20",
+      "05C05"
+    ]
+  },
+  "sources": [
+    {
+      "title": "An Arbor Polytope with Nonreal Ehrhart Roots",
+      "authors": [
+        "Yuran Xiu"
+      ],
+      "id": "hexagon:2610.00235v1",
+      "location": "https://hexagonmath.org/2610.00235v1",
+      "type": "paper",
+      "relationship": "formalizes",
+      "license": "CC-BY-4.0",
+      "note": "The accompanying paper presents the same counterexample developed together with this formalization using AI assistance; this repository ports its original Lean 4.27.0 development to the pinned newer toolchain."
+    },
+    {
+      "title": "On posets and polytopes attached to arbors",
+      "authors": [
+        "Frederic Chapoton"
+      ],
+      "id": "arXiv:2503.04247v2",
+      "location": "https://arxiv.org/abs/2503.04247v2",
+      "type": "paper",
+      "relationship": "background",
+      "note": "Definition of arbor polytopes and descendant-sum inequalities; the singleton-block case is an allowed subclass."
+    },
+    {
+      "title": "Polytopes and posets associated to preorders",
+      "authors": [
+        "Christos A. Athanasiadis",
+        "Frederic Chapoton"
+      ],
+      "id": "arXiv:2605.26916v1",
+      "location": "https://arxiv.org/abs/2605.26916v1",
+      "type": "paper",
+      "relationship": "background",
+      "note": "Conjecture 1.2 proposes the real-root property refuted by this witness."
+    },
+    {
+      "title": "Counterexamples of the conjecture on roots of Ehrhart polynomials",
+      "authors": [
+        "Akihiro Higashitani"
+      ],
+      "id": "arXiv:1106.4633",
+      "location": "https://arxiv.org/abs/1106.4633",
+      "type": "paper",
+      "relationship": "background",
+      "note": "General Ehrhart-root context, not the arbor construction."
+    }
+  ],
+  "related_formalizations": [
+    {
+      "id": "https://github.com/leanprover-community/mathlib4/blob/a3a10db0e9d66acbebf76c5e6a135066525ac900/Mathlib/Analysis/Complex/Polynomial/Basic.lean",
+      "relationship": "adapts",
+      "note": "ComplexFTA.lean preserves attribution to Chris Hughes, Junyan Xu, and Yury Kudryashov for the short fundamental-theorem-of-algebra argument, Apache-2.0."
+    }
+  ],
+  "status": {
+    "scope": "All five advertised statements are proved in Solution.lean via the full project development. The actual coordinate-subtype lattice count is used for every natural dilation, including zero. The independent Challenge declares the same definitions and statement signatures with five deliberately isolated specification holes. No proof module imports Challenge.",
+    "sorry_count": 0,
+    "sorry_in_definitions": 0,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "automation": {
+    "methods": [
+      {
+        "method": "agent",
+        "models": [
+          "GPT-6 family (initial research requested as gpt-6-astra at xhigh; exact per-turn identities not fully preserved)"
+        ],
+        "framework": "OpenAI Codex",
+        "tool_setup": "AI-generated mathematics, Lean source, compilation-driven repairs, and AI statement review. Lean and mathlib tactics check the proof terms.",
+        "prompting_notes": "Develop a complete counterexample, skeptically review it, formalize the full statement, pin dependencies, and audit transitive axioms. Preserve the mathematical theorem when porting."
+      }
+    ],
+    "spend_usd": "not tracked",
+    "notes": "Yuran Xiu directed and authorized publication. The contributor expressly reported that no part had been checked and understood by a human. Listing the contributor does not assert that the Lean code was human-written."
+  },
+  "fidelity": {
+    "divergences": "The formal forest uses recursive product coordinates and Nat-valued lattice points to represent nonnegative integral coordinates for singleton-labeled arbors. This is an allowed subclass sufficient for a counterexample to the general conjecture. Matching the external prose definition is an AI assessment, not a machine-checked interpretation of the paper. No additional mathematical hypotheses are introduced."
+  },
+  "review": {
+    "status": "agent-reviewed",
+    "reviewers": [
+      "OpenAI Codex (AI agent)"
+    ],
+    "notes": "AI statement and mathematical review, followed by successful fresh compilation of all eight proof-side modules on Lean 4.35.0-rc3. All five main endpoints have only propext, Classical.choice, Quot.sound. The separate Challenge has isolated statement placeholders and is never imported by the proof. Palomar full mechanical preflight and registry review are separate gates. No human understanding or external peer review is claimed; bounded novelty searches are not priority guarantees."
+  },
+  "alignment": {
+    "namespace": "ArborCounterexample",
+    "statements": [
+      {
+        "source": "hexagon:2610.00235v1, main counterexample and all-dilation formula",
+        "lean": "ArborCounterexample.E_counts_all_dilations",
+        "module": "Solution",
+        "status": "proved",
+        "note": "Independently restated in Challenge; proof dependency audit is printed by Solution."
+      },
+      {
+        "source": "hexagon:2610.00235v1, main counterexample and all-dilation formula",
+        "lean": "ArborCounterexample.E_has_nonreal_root",
+        "module": "Solution",
+        "status": "proved",
+        "note": "Independently restated in Challenge; proof dependency audit is printed by Solution."
+      },
+      {
+        "source": "hexagon:2610.00235v1, main counterexample and all-dilation formula",
+        "lean": "ArborCounterexample.complete_counterexample",
+        "module": "Solution",
+        "status": "proved",
+        "note": "Independently restated in Challenge; proof dependency audit is printed by Solution."
+      },
+      {
+        "source": "hexagon:2610.00235v1, main counterexample and all-dilation formula",
+        "lean": "ArborCounterexample.ehrhart_unique",
+        "module": "Solution",
+        "status": "proved",
+        "note": "Independently restated in Challenge; proof dependency audit is printed by Solution."
+      },
+      {
+        "source": "hexagon:2610.00235v1, main counterexample and all-dilation formula",
+        "lean": "ArborCounterexample.not_all_arbor_ehrhart_roots_real",
+        "module": "Solution",
+        "status": "proved",
+        "note": "Independently restated in Challenge; proof dependency audit is printed by Solution."
+      }
+    ]
+  },
+  "acknowledgements": "Lean, mathlib and their contributors; ComplexFTA attribution is preserved in NOTICE and the source. This repository is the substantive proof development, not a wrapper around an unpublished external proof."
+}

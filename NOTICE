@@ -1,0 +1,11 @@
+Arbor Ehrhart nonreal-root counterexample
+Copyright 2026 Yuran Xiu
+Licensed under the Apache License, Version 2.0.
+
+ComplexFTA.lean adapts the proof in mathlib's
+Mathlib/Analysis/Complex/Polynomial/Basic.lean at revision
+a3a10db0e9d66acbebf76c5e6a135066525ac900 (Apache-2.0),
+by Chris Hughes, Junyan Xu, and Yury Kudryashov.
+The attribution in that source file is retained.
+External Lean and mathlib dependencies are not bundled and retain their licenses.
+The paper at https://hexagonmath.org/2610.00235v1 is separately CC BY 4.0.

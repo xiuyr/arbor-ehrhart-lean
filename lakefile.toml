@@ -1,0 +1,22 @@
+name = "arborEhrhartLean"
+version = "0.1.0"
+defaultTargets = ["ArborRoots", "Challenge", "Solution"]
+moreLeanArgs = ["-M4096", "-DmaxRecDepth=8192", "-DmaxHeartbeats=2000000"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "728a93eeff833da3173895bb0575752fdc24edb0"
+
+[[lean_lib]]
+name = "ArborRoots"
+roots = ["Moments", "Arbor", "Count", "ComplexFTA", "RootObstruction", "Main", "Audit"]
+
+[[lean_lib]]
+name = "Challenge"
+roots = ["Challenge"]
+
+[[lean_lib]]
+name = "Solution"
+roots = ["Solution"]

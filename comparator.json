@@ -1,0 +1,16 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "ArborCounterexample.E_counts_all_dilations",
+    "ArborCounterexample.E_has_nonreal_root",
+    "ArborCounterexample.complete_counterexample",
+    "ArborCounterexample.ehrhart_unique",
+    "ArborCounterexample.not_all_arbor_ehrhart_roots_real"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}
